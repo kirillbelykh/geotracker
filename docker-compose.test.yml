@@ -22,6 +22,7 @@ services:
       - db
     command: ["./wait-for-it.sh", "db:5432", "--", "pytest", "tests"]
     environment:
+      SECRET_KEY: f4e96efed18a108f15904d3c67276410717981d49402f153d550fb9411d3537e
       DB_HOST: db
       DB_NAME: geo_db
       DB_PORT: 5432
