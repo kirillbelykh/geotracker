@@ -38,11 +38,15 @@ git clone https://github.com/kirillbelykh/geotracker.git
 cd geotracker
 ```
 
-Install dependencies:
+Install dependencies using Poetry:
 ```bash
-pip install -r requirements.txt
+poetry install
 ```
 
+Activate the virtual environment:
+```bash
+poetry shell
+```
 Run the app:
 ```bash
 uvicorn app.main:app --reload
